@@ -1,6 +1,6 @@
 print("**WELCOME to GODZILLA ATTACKS**")
 
-options = [ "A", "B", "C"]
+options = [ "A", "a", "B", "b", "C", "c"]
 
 name = input("Hello, what is your name? \n ")
 
@@ -36,11 +36,11 @@ def scene1_hide():
   print("You hide under your bed. 5 minutes later a huge sonic roar shakes your house and bedroom. You hit your head on your bed frame. Next thing you know, it's morning and you have a huge headache. Turns out.. you just have a cold and it was all a dream. THE END.")
 
 def scene1_options(scene1):
-  if scene1 == "A":
+  if scene1.upper() == "A":
     scene1_socialMedia()
-  elif scene1 == "B":
+  elif scene1.upper() == "B":
     scene1_car()
-  elif scene1 == "C":
+  elif scene1.upper() == "C":
     scene1_hide()
   else:
     print("try again, choose a,b,c,or d")
